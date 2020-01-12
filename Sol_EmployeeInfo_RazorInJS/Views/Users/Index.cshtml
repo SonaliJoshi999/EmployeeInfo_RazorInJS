@@ -1,0 +1,24 @@
+﻿@model Sol_EmployeeInfo_RazorInJS.ViewModel.UserViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 style="color:#1668bb;">Employees Details</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div id="divUserTable" data-userlist="@Model.UsersList">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+
+    <script type="text/javascript" src="~/js/userListTemplateRender.js"></script>
+
+}
+
